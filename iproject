@@ -1,0 +1,25 @@
+-- SELECT tipo_loja, id_loja, count (id_loja) as 'Total pedidos'
+-- FROM BaseCaseiFood
+-- WHERE hora_data_pedido LIKE '2020-04-07T%' 
+-- GROUP BY id_loja
+-- ORDER BY count (id_loja) desc
+
+--  SELECT 	id_loja, 
+-- 		count(id_loja) as TotalPedidos , 
+-- 		sum(tempo_entrega_real_seg) as 'Total Tempo entrega',
+-- 		(sum(tempo_entrega_real_seg)/count(id_loja)) as 'Tempo Medio Entrega'
+-- FROM BaseCaseiFood
+-- 	WHERE (hora_data_pedido LIKE '2020-04-11T%') and id_loja = '188678'
+-- 	GROUP BY id_loja
+-- 	ORDER BY (sum(tempo_entrega_real_seg)/count(id_loja)) asc 
+
+-- SELECT id_loja, count(id_loja)
+-- FROM BaseCaseiFood
+-- WHERE flag_atraso_restaurante = 'TRUE'
+-- GROUP BY id_loja
+-- ORDER BY count(id_loja) desc
+
+-- SELECT sum(tempo_entrega_real_seg), count(numero_pedido),
+-- sum(tempo_entrega_real_seg)/count(numero_pedido) as media
+-- FROM BaseCaseiFood
+-- where hora_data_pedido LIKE '2020-04-12T%'
